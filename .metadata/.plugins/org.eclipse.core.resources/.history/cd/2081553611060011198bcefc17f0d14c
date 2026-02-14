@@ -1,0 +1,18 @@
+package com.bootcamp.week1;
+
+public class StudentProfile {
+	
+	int id = 0; 
+	byte edad = 31; 
+	long telefono = 55248944; 
+	float promedioParcial = 8.85f; 
+	double promedioFinal = 8.8; 
+	char seccion = 'c'; 
+	boolean becado = true;
+	String fullName = "Dante Medina"; 
+	
+	
+	 System.out.println(message);
+	
+
+}

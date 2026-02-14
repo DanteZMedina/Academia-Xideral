@@ -1,0 +1,7 @@
+package com.bootcamp.week1.ex6;
+
+abstract class Vehiculo implements Arrancable{
+
+	
+	
+}
