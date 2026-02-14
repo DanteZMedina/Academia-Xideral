@@ -74,4 +74,4 @@ Bash
 cd zarvela
 mvn spring-boot:run
 
-La API estará disponible en: http://localhost:8080
+La API estará disponible en: [http://localhost:8080](http://localhost:8080/api/pacientes)
