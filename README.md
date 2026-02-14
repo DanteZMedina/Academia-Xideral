@@ -1,89 +1,77 @@
-Zarvela — Backend API & Java Fundamentals
+🚀 Zarvela — Backend API & Java Fundamentals
 
-Este repositorio contiene dos partes principales de aprendizaje y desarrollo en Java:
+Bienvenido al repositorio Zarvela, un espacio dedicado a documentar mi curva de aprendizaje en el ecosistema Java, abarcando desde la lógica pura de programación hasta la arquitectura de microservicios.
+📋 Tabla de Contenidos
 
-Ejercicios de fundamentos de Java (POO)
+    Descripción del Proyecto
 
-API REST construida con Spring Boot conectada a MySQL
+    Estructura del Repositorio
 
-El objetivo del repositorio es documentar el progreso desde los fundamentos del lenguaje hasta la construcción de una API funcional con persistencia de datos.
+    Módulo 1: Fundamentos de Java (POO)
 
-Estructura del repositorio
+    Módulo 2: Zarvela API (Spring Boot)
+
+    Stack Tecnológico
+
+    Configuración y Ejecución
+
+🎯 Descripción del Proyecto
+
+El objetivo principal de este repositorio es demostrar la progresión técnica desde los pilares de la Programación Orientada a Objetos hasta la construcción de una API REST funcional con persistencia de datos real.
+📂 Estructura del Repositorio
+Bash
+
 .
-├── Fundamentos_de_Java_POO
-└── zarvela
-Fundamentos_de_Java_POO
+├── Fundamentos_de_Java_POO  # Ejercicios de lógica y bases del lenguaje
+└── zarvela                  # Aplicación Backend principal (Spring Boot)
 
-Carpeta con ejercicios prácticos de la Semana 1, enfocados en reforzar los conceptos base de Java:
+🧱 Módulo 1: Fundamentos de Java (POO)
 
-Tipos primitivos
+Esta sección contiene la base técnica desarrollada durante la Semana 1, enfocada en la resolución de problemas mediante el paradigma de objetos:
 
-Clases y objetos
+    Sintaxis Base: Tipos primitivos, arreglos y estructuras de control (loops/condicionales).
 
-Encapsulación
+    POO Avanzada: Implementación de Herencia, Polimorfismo y Encapsulamiento.
 
-Arreglos y loops
+    Lógica de Negocio: Modelado de clases que sirven de base para la arquitectura de Spring Boot.
 
-Condicionales
+🌐 Módulo 2: Zarvela API (Spring Boot)
 
-Herencia y polimorfismo
+Una API REST robusta diseñada bajo el patrón de diseño MVC (Modelo-Vista-Controlador) para gestionar la persistencia de datos.
+🛠 Stack Tecnológico
+Tecnología	Función
+Java 17	Lenguaje de programación principal
+Spring Boot 3	Framework de desarrollo Backend
+Spring Data JPA	Abstracción de persistencia de datos
+MySQL	Base de datos relacional
+Maven	Gestor de dependencias y construcción
+Lombok	Optimización de código (Boilerplate reduction)
+⚙️ Configuración y Ejecución
+Requisitos Previos
 
-Estos ejercicios funcionan como base para entender la arquitectura usada posteriormente en Spring Boot.
+    Java 17 o superior.
 
-Zarvela API
+    Maven instalado.
 
-Proyecto Spring Boot que expone una API REST conectada a una base de datos MySQL.
+    MySQL corriendo (preferiblemente vía Docker).
 
-Tecnologías
+1. Base de Datos
 
-Java 17
+La aplicación está configurada para conectarse a:
 
-Spring Boot
+    URL: jdbc:mysql://localhost:3307/Zarvela
 
-Spring Web
+    Credenciales: root / root
 
-Spring Data JPA
+    [!TIP]
+    Hibernate está configurado en modo update, por lo que las tablas se crearán automáticamente al iniciar la aplicación.
 
-MySQL
+2. Ejecución
 
-Maven
+Navega a la carpeta del proyecto y ejecuta:
+Bash
 
-Lombok
-
-Configuración de base de datos
-
-La aplicación se conecta a MySQL usando:
-
-jdbc:mysql://localhost:3307/Zarvela
-
-Configuración en application.properties:
-
-spring.datasource.url=jdbc:mysql://localhost:3307/Zarvela
-spring.datasource.username=root
-spring.datasource.password=root
-spring.jpa.hibernate.ddl-auto=update
-
-Hibernate crea o actualiza automáticamente las tablas a partir de las entidades JPA.
-
-Ejecutar el proyecto
-
-Desde la carpeta zarvela:
-
+cd zarvela
 mvn spring-boot:run
 
-La API se ejecuta en:
-
-http://localhost:8081
-Notas
-
-Este repositorio forma parte de un proceso de aprendizaje práctico de:
-
-Java
-
-Spring Boot
-
-APIs REST
-
-Persistencia con JPA
-
-Integración con MySQL en Docker
+La API estará disponible en: http://localhost:8081
