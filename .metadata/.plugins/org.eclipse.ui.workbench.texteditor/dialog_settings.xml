@@ -4,6 +4,9 @@
 	<section name="java.lang.Class">
 		<item key="replaceBarOpen" value="false"/>
 		<list key="findhistory">
+			<item value="&lt;groupId&gt;com.h2database&lt;/groupId&gt;"/>
+			<item value="&lt;dependency&gt;&#x0A;"/>
+			<item value="&lt;dependency&gt;"/>
 			<item value="public static String invertir(String s) {"/>
 		</list>
 	</section>
