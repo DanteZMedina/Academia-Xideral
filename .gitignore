@@ -12,4 +12,4 @@
 
 # Maven / Gradle
 target/
-build/
+build/.metadata/
