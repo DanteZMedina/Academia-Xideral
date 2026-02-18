@@ -4,12 +4,18 @@
 .project
 .settings/
 
-# Compilados Java
+# Java
 *.class
+*.jar
+*.war
 
 # Logs
 *.log
 
 # Maven / Gradle
 target/
-build/.metadata/
+build/
+
+# OS
+.DS_Store
+Thumbs.db
