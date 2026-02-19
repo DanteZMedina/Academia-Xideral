@@ -4,10 +4,8 @@
 .project
 .settings/
 
-# Java
+# Compilados Java
 *.class
-*.jar
-*.war
 
 # Logs
 *.log
@@ -15,7 +13,3 @@
 # Maven / Gradle
 target/
 build/
-
-# OS
-.DS_Store
-Thumbs.db
