@@ -70,10 +70,10 @@ Lombok	Reducción de código boilerplate
 ```
 
 ⚙️ Configuración y Ejecución
-🔹 Requisitos Previos
-Java 17 o superior
-Maven instalado
-MySQL corriendo (preferiblemente vía Docker)
+- Requisitos Previos
+- Java 17 o superior 
+- Maven instalado
+- MySQL corriendo (preferiblemente vía Docker)
 
 🔹 Base de Datos
 La aplicación está configurada para conectarse a:
