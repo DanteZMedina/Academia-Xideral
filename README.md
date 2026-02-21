@@ -58,7 +58,6 @@ Incluye:
 🔹 Ejercicio 6: Framework de Eventos — Observer + Strategy + DI
 ```
 
-Este módulo representa el fundamento conceptual sobre el cual se construye la API.
 🌐 Zarvela API (Spring Boot)
 Aplicación Backend desarrollada con Spring Boot 3, implementando el patrón de arquitectura MVC (Modelo-Vista-Controlador) para gestionar persistencia de datos en MySQL.
 La API incluye:
@@ -70,8 +69,8 @@ La API incluye:
 - Integración con base de datos relacional
 ```
 
-Este módulo representa el acercamiento a springBatch
-🌐 Zarvela Spring Batch — Procesamiento por Lotes de Pacientes
+
+👩‍⚕️ Zarvela Spring Batch — Procesamiento por Lotes de Pacientes
 Zarvela Spring Batch es un módulo especializado en procesamiento masivo de datos clínicos, enfocado en la carga, transformación y persistencia automatizada de información de pacientes.
 Este módulo simula un escenario real del sector salud donde es necesario:
 ```bash
