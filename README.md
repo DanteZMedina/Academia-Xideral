@@ -32,7 +32,8 @@ Integración con base de datos relacional
 ```
 ⚠️ Las carpetas Fundamentos_de_Java_POO y StudentProfile no forman parte de la estructura oficial del proyecto actual.
 
-🧱 Módulo 1: Fundamentos de Java
+🧱 Fundamentos : 
+Semana 1: Fundamentos de Java
 Esta sección contiene la base técnica enfocada en la resolución de problemas utilizando el paradigma orientado a objetos.
 Incluye:
 ```bash
@@ -45,9 +46,20 @@ Incluye:
 🔹 Modelado de clases
 🔹 Manejo de excepciones
 ```
-Este módulo representa el fundamento conceptual sobre el cual se construye la API.
+Semana 2: Lección: Excepciones, Patrones y Diseño
+Cubre excepciones, clases anidadas, enumeraciones, interfaces funcionales y patrones de diseño.
+Incluye:
+```bash
+🔹 Ejercicio 1: Excepciones Personalizadas — Sistema Bancario
+🔹 Ejercicio 2: Iterador con Inner Class — SimpleStack
+🔹 Ejercicio 3: Sistema de Tickets con Enums Avanzados
+🔹 Ejercicio 4: Pipeline Funcional de Productos
+🔹 Ejercicio 5: Pizzas — Builder + Decorator
+🔹 Ejercicio 6: Framework de Eventos — Observer + Strategy + DI
+```
 
-🌐 Módulo 2: Zarvela API (Spring Boot)
+Este módulo representa el fundamento conceptual sobre el cual se construye la API.
+🌐 Zarvela API (Spring Boot)
 Aplicación Backend desarrollada con Spring Boot 3, implementando el patrón de arquitectura MVC (Modelo-Vista-Controlador) para gestionar persistencia de datos en MySQL.
 La API incluye:
 ```bash
@@ -58,15 +70,15 @@ La API incluye:
 - Integración con base de datos relacional
 ```
 
-🛠 Stack Tecnológico
+Este módulo representa el acercamiento a springBatch
+🌐 Zarvela Spring Batch — Procesamiento por Lotes de Pacientes
+Zarvela Spring Batch es un módulo especializado en procesamiento masivo de datos clínicos, enfocado en la carga, transformación y persistencia automatizada de información de pacientes.
+Este módulo simula un escenario real del sector salud donde es necesario:
 ```bash
-Tecnología	Función
-Java 17	Lenguaje principal
-Spring Boot 3	Framework Backend
-Spring Data JPA	Abstracción de persistencia
-MySQL	Base de datos relacional
-Maven	Gestión de dependencias
-Lombok	Reducción de código boilerplate
+- Procesar miles de registros clínicos sin intervención manual
+- Transformar datos antes de almacenarlos
+- Garantizar trazabilidad e historial de ejecución
+- Manejar grandes volúmenes con eficiencia y control transaccional
 ```
 
 ⚙️ Configuración y Ejecución
