@@ -1,7 +1,7 @@
-package com.xideral.semana3.ejercicio1;
+package com.bootcamp.week3.ex1;
 
 import java.util.*;
-
+import java.util.stream.Collectors;
 class ContactManager {
 
     private final Set<Contact> contacts = new TreeSet<>();
@@ -33,3 +33,4 @@ class ContactManager {
     public int size() {
         return contacts.size();
     }
+}
