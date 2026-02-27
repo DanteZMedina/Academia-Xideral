@@ -58,6 +58,18 @@ Incluye:
 🔹 Ejercicio 6: Framework de Eventos — Observer + Strategy + DI
 ```
 
+Semana 3: Java Avanzado - Colecciones, Lambdas y Streams
+Seis ejercicios progresivos que cubren Collections, Generics, Lambdas, Streams y CompletableFuture.
+Incluye:
+```bash
+🔹 Ejercicio 1: Gestor de Contactos con Collections
+🔹 Ejercicio 2: Caché Genérico con Expiración
+🔹 Ejercicio 3: Validador Composable con Lambdas
+🔹 Ejercicio 4: Análisis de Ventas con Streams
+🔹 Ejercicio 5: Pipeline de Procesamiento de Texto
+🔹 Ejercicio 6: Web Scraper Concurrente con CompletableFuture
+```
+
 🌐 Zarvela API (Spring Boot)
 Aplicación Backend desarrollada con Spring Boot 3, implementando el patrón de arquitectura MVC (Modelo-Vista-Controlador) para gestionar persistencia de datos en MySQL.
 La API incluye:
