@@ -118,3 +118,10 @@ La API estará disponible en:
 http://localhost:8080
 http://localhost:8080/api/pacientes
 ```
+
+👩‍⚕️ Zarvela Spring BatchV2Mongo — Procesamiento por Lotes de Pacientes y escribiendo los datos procesados en mongo. 
+Para mas información entrar en la carpeta correspondiente: 
+```bash
+
+Academia-Xideral >>> zarvela-batch-v2-mongo
+```
