@@ -10,7 +10,7 @@ public class ReportePacienteProcessor implements ItemProcessor<Paciente, Reporte
     public ReportePaciente process(Paciente paciente) {
 
         ReportePaciente reporte = new ReportePaciente();
-        reporte.setNombre(paciente.getNombre());
+        reporte.setNombre(paciente.getNombre().toUpperCase());
         reporte.setEdad(paciente.getEdad());
         reporte.setDiagnostico(paciente.getDiagnostico());
         reporte.setNivelRiesgo(paciente.getNivelRiesgo());
