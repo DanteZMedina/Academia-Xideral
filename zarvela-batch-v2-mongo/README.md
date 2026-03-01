@@ -121,6 +121,124 @@ ALTO	REQUIERE ATENCION INMEDIATA
 MEDIO	SEGUIMIENTO PRIORITARIO
 BAJO	CONTROL REGULAR
 ```
+🧪 Testing — JUnit 5 + Mockito
+Además del procesamiento Batch, este proyecto incluye tests unitarios completos, siguiendo buenas prácticas:
+
+✅ Tests sin mocks para funciones puras
+
+✅ Tests con Mockito para servicios con dependencias
+
+❌ No se levanta Spring en unit tests
+
+❌ No se requiere MySQL ni Mongo para ejecutar los tests
+📂 Estructura de Tests
+```bash
+src/test/java/com/zarvela/zarvela_batch_v2_mongo
+│
+├── model
+│   └── PacienteTest.java
+│
+├── processor
+│   └── ReportePacienteProcessorTest.java
+│
+└── service
+    └── PacienteServiceTest.java
+```
+
+Tests SIN Mock (JUnit 5 puro)
+
+Se aplican cuando la clase:
+
+No depende de base de datos
+
+No depende de Spring
+
+Es una función pura (entrada → salida)
+
+Ejemplo: ReportePacienteProcessorTest
+
+```bash
+@Test
+@DisplayName("process: convierte nombre a mayúsculas")
+void process_nombreSeConvierteAMayusculas() throws Exception {
+
+    Paciente paciente = new Paciente("Juan Perez", 65, "Vertigo", "ALTO");
+
+    ReportePaciente resultado = processor.process(paciente);
+
+    assertEquals("JUAN PEREZ", resultado.getNombre());
+}
+```
+
+🔑 Configuración de Mockito
+```bash
+@ExtendWith(MockitoExtension.class)
+class PacienteServiceTest {
+
+    @Mock
+    private ReportePacienteProcessor processor;
+
+    @Mock
+    private ReportePacienteRepository repository;
+
+    @InjectMocks
+    private PacienteService service;
+}
+```
+¿Qué hace cada anotación?
+Anotación	Función
+@ExtendWith(MockitoExtension.class)	Activa Mockito en JUnit 5
+@Mock	Crea un mock automático
+@InjectMocks
+
+🧠 Técnicas de Mockito utilizadas
+
+Este proyecto implementa las técnicas principales:
+```bash
+| Técnica           | Uso                                  |
+| ----------------- | ------------------------------------ |
+| `when/thenReturn` | Programar retorno de mocks           |
+| `verify`          | Verificar que un método fue llamado  |
+| `times(n)`        | Verificar número de invocaciones     |
+| `never()`         | Verificar que NO se llamó un método  |
+| `InOrder`         | Verificar orden de ejecución         |
+| `ArgumentCaptor`  | Capturar argumentos enviados al mock |
+| `any()`           | Coincidir con cualquier argumento    |
+
+```
+
+▶️ Ejecutar Tests
+```bash
+./mvnw test
+```
+nota: No es necesario que MySQL ni Mongo estén corriendo.
+
+Salida esperada:
+```bash
+[INFO] Tests run: X, Failures: 0, Errors: 0, Skipped: 0
+[INFO] BUILD SUCCESS
+```
+
+📊 Cobertura conceptual del módulo
+
+Este proyecto cubre:
+
+Spring Batch
+
+MySQL ➜ Mongo
+
+Arquitectura por capas
+
+Testing con JUnit 5
+
+Testing profesional con Mockito
+
+Verificación de interacción entre componentes
+
+Buenas prácticas de testing backend
+
+
+
 📌 Observaciones Técnicas
 
 No se usa @EnableBatchProcessing (Spring Boot 3 ya lo auto-configura).
