@@ -70,6 +70,18 @@ Incluye:
 🔹 Ejercicio 6: Web Scraper Concurrente con CompletableFuture
 ```
 
+Semana 4: Lección: Spring Boot, REST y Herramientas
+6 ejercicios progresivos construirás una API REST completa para una tienda en línea usando Spring Boot, JPA, testing y Git. Cada ejercicio agrega funcionalidad sobre el anterior.
+Incluye:
+```bash
+🔹 Ejercicio 1: Proyecto Base y Modelo de Datos
+🔹 Ejercicio 2: Repository y Service Layer
+🔹 Ejercicio 3: REST Controller con CRUD Completo
+🔹 Ejercicio 4: Unit Tests con JUnit 5 y Mockito
+🔹 Ejercicio 5: Relaciones JPA y Consultas Avanzadas
+🔹 Ejercicio 6: (Bonus): Data Loader, Paginación y Documentación
+```
+
 🌐 Zarvela API (Spring Boot)
 Aplicación Backend desarrollada con Spring Boot 3, implementando el patrón de arquitectura MVC (Modelo-Vista-Controlador) para gestionar persistencia de datos en MySQL.
 La API incluye:
