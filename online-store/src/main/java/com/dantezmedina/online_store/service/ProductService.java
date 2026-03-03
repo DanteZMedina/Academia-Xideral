@@ -24,8 +24,7 @@ public class ProductService {
 
     public ProductResponse findById(Long id) {
         Product product = repository.findById(id)
-                .orElseThrow(() ->
-                        new ResourceNotFoundException("Product not found with id: " + id));
+                .orElseThrow(() -> new ResourceNotFoundException("Product not found with id: " + id));
 
         return mapToResponse(product);
     }
@@ -52,8 +51,7 @@ public class ProductService {
     public ProductResponse update(Long id, ProductRequest request) {
 
         Product product = repository.findById(id)
-                .orElseThrow(() ->
-                        new ResourceNotFoundException("Product not found with id: " + id));
+                .orElseThrow(() -> new ResourceNotFoundException("Product not found with id: " + id));
 
         product.setName(request.name());
         product.setPrice(request.price());
@@ -88,7 +86,6 @@ public class ProductService {
                 product.getDescription(),
                 product.getCategory(),
                 product.getStock(),
-                product.getCreatedAt()
-        );
+                product.getCreatedAt());
     }
 }
