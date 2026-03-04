@@ -5,7 +5,12 @@ import com.dantezmedina.online_store.exception.ResourceNotFoundException;
 import com.dantezmedina.online_store.model.Product;
 import com.dantezmedina.online_store.repository.ProductRepository;
 import lombok.RequiredArgsConstructor;
+
+import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
+
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 
 import java.util.List;
 
@@ -87,5 +92,12 @@ public class ProductService {
                 product.getCategory(),
                 product.getStock(),
                 product.getCreatedAt());
+    }
+
+    public List<TopProductResponse> getTopSellingProducts() {
+
+        Pageable topFive = PageRequest.of(0, 5);
+
+        return repository.findTopSellingProducts(topFive);
     }
 }

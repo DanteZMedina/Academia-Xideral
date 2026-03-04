@@ -2,6 +2,7 @@ package com.dantezmedina.online_store.controller;
 
 import com.dantezmedina.online_store.dto.ProductRequest;
 import com.dantezmedina.online_store.dto.ProductResponse;
+import com.dantezmedina.online_store.dto.TopProductResponse;
 import com.dantezmedina.online_store.service.ProductService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
@@ -58,5 +59,10 @@ public class ProductController {
             @RequestParam String name) {
 
         return ResponseEntity.ok(service.searchByName(name));
+    }
+
+    @GetMapping("/top-selling")
+    public ResponseEntity<List<TopProductResponse>> getTopSellingProducts() {
+        return ResponseEntity.ok(service.getTopSellingProducts());
     }
 }
