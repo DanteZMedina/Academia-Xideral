@@ -9,8 +9,11 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 
-import org.springframework.data.domain.PageRequest;
+
 import org.springframework.data.domain.Pageable;
+
+import org.springframework.data.domain.Page;
+
 
 import java.util.List;
 
@@ -99,5 +102,11 @@ public class ProductService {
         Pageable topFive = PageRequest.of(0, 5);
 
         return repository.findTopSellingProducts(topFive);
+    }
+
+    public Page<ProductResponse> findAll(Pageable pageable) {
+
+        return repository.findAll(pageable)
+                .map(this::mapToResponse);
     }
 }
