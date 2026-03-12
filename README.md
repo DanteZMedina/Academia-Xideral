@@ -82,6 +82,16 @@ Incluye:
 🔹 Ejercicio 6: (Bonus): Data Loader, Paginación y Documentación
 ```
 
+Semana 5: Módulo 7 - Gen IA Copilot
+4 ejercicios: 2 Copilot Challenges + 2 Project Milestones
+Incluye:
+```bash
+🔹 Ejercicio 1: Copilot Code Generation Race
+🔹 Ejercicio 2: Bug Hunting: Encuentra los Errores de Copilot
+🔹 Milestone 1: Modelo de Datos y Repositorios
+🔹 Milestone 2: API Completa + Tests
+```
+
 🌐 Zarvela API (Spring Boot)
 Aplicación Backend desarrollada con Spring Boot 3, implementando el patrón de arquitectura MVC (Modelo-Vista-Controlador) para gestionar persistencia de datos en MySQL.
 La API incluye:
